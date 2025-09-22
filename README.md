@@ -6,7 +6,7 @@
 <!--<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=thematako" alt="thematako" /></a> </p>-->
 
 - 🔭 I’m currently working on :
-      - <a href="https://github.com/TheMatako/Shooter3DInJava"> A 3D Shooter (FPS style) on Java with JMonkeyEngine </a>
+      <a href="https://github.com/TheMatako/Shooter3DInJava"> A 3D Shooter (FPS style) on Java with JMonkeyEngine </a>
 
 - 🌱 Currently learning :
   -  Programming Languages :  

@@ -2,7 +2,8 @@
 <h3 align="center">French Cybersecurity Engineering Student & Systems Developer</h3>
 
 🔭 **I’m currently working on:** <br>
-- <a href="https://github.com/TheMatako/IPLS" margin-left=30px>IPLS:</a> An hardened Linux distribution based on Arch. Made in collaboration with Raphael V. during our project of final year at Isima.<br>
+- <a href="https://github.com/TheMatako/IPLS" margin-left=30px>IPLS:</a> An hardened Linux distribution based on Arch. Made in collaboration with [Raphael Verginelli](@RaphaelVerginelli
+) during our project of final year at Isima.<br>
 
 <h3 align="left">Connect with me:</h3>
 <img src="https://komarev.com/ghpvc/?username=thematako&label=Profile%20views&color=0e75b6&style=flat" alt="thematako" align="right" />

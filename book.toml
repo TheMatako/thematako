@@ -1,0 +1,12 @@
+[book]
+title = "Matéo Reymond"
+authors = ["Matéo Reymond"]
+language = "en"
+src = "docs/"
+
+[output.html]
+git-repository-url = "https://github.com/TheMatako/TheMatako"
+edit-url-template = "https://github.com/TheMatako/TheMatako/edit/main/docs/{path}"
+
+[output.html.search]
+enable = true

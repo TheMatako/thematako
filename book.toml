@@ -5,8 +5,7 @@ language = "en"
 src = "docs/"
 
 [output.html]
-git-repository-url = "https://github.com/TheMatako/TheMatako"
-edit-url-template = "https://github.com/TheMatako/TheMatako/edit/main/docs/{path}"
+git-repository-url = "https://github.com/TheMatako/thematako"
 
 [output.html.search]
 enable = true

@@ -1,3 +1,0 @@
-# SUMMARY
-
-[INDEX](index.md)

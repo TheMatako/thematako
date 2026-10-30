@@ -1,0 +1,33 @@
+/* Raw values. Never used directly in components: components read the roles defined in themes/. */
+:root {
+  /* Neutrals */
+  --ink-950: #0d0e12;
+  --ink-900: #14161c;
+  --ink-800: #1b1e26;
+  --ink-700: #272b35;
+  --ivory-100: #ece8df;
+  --stone-400: #a0a2ad;
+
+  /* Violet */
+  --violet-300: #b88cf8;
+  --violet-400: #a371f7;
+  --violet-700: #5a4390;
+
+  /* Champagne gold */
+  --gold-400: #c9a96e;
+  --gold-800: #6b5b3a;
+  
+  /* Silver */
+  --silver-300: #c4c7d0;
+
+  /* Status */
+  --green-400: #7ccf9b;
+  --green-800: #2f5a42;
+  --amber-400: #e0b25a;
+  --red-400: #e57d7d;
+
+  /* Families */
+  --font-sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: "IBM Plex Serif", Georgia, "Times New Roman", serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}

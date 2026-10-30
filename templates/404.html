@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Not found · {{ config.title }}{% endblock title %}
+{% block content %}
+<header class="page-head">
+  <h1>404</h1>
+  <p class="lead">This page does not exist, or it moved.</p>
+  <p><a class="btn" href="{{ get_url(path='/') }}">Back to the start</a></p>
+</header>
+{% endblock content %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title }} · {{ config.title }}{% endblock title %}
+{% block description %}{{ page.description }}{% endblock description %}
+{% block content %}
+<article class="prose">
+  <header class="page-head">
+    <h1>{{ page.title }}</h1>
+    <p class="lead">{{ page.description }}</p>
+    {% if page.extra.repo %}<p><a class="btn" href="{{ page.extra.repo }}" rel="noopener noreferrer" target="_blank">Source on GitHub</a></p>{% endif %}
+  </header>
+  {% if page.extra.status %}
+  <section aria-labelledby="status">
+    <h2 id="status">Where it stands</h2>
+    <ul class="status-list">
+      {% for item in page.extra.status %}<li>{{<ui.badge state={item.state} />}}<span>{{ item.text }}</span></li>{% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+  {{ page.content | safe }}
+</article>
+{% endblock content %}

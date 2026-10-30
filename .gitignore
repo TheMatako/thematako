@@ -1,0 +1,14 @@
+public/
+
+Thumbs.db
+desktop.ini
+.DS_Store
+
+.vscode/
+.idea/
+*.swp
+*~
+
+.env
+*.pem
+*.key

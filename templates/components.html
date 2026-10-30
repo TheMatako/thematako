@@ -1,0 +1,30 @@
+{% component ui.badge(state: string) %}
+{%- if state == "done" -%}<span class="tag tag--success">Done</span>
+{%- elif state == "next" -%}<span class="tag tag--accent">Next</span>
+{%- else -%}<span class="tag">Planned</span>{%- endif -%}
+{% endcomponent ui.badge %}
+
+{% component ui.entry_card(entry: map) %}
+<article class="card"><a href="{{ entry.permalink }}">
+  <h3 class="card__title">
+    {{ entry.title }}
+    {% if entry.extra.full_name %}
+      <span class="card__text">· {{ entry.extra.full_name }}</span>
+    {% endif %}
+  </h3>
+  <p class="card__text">{{ entry.description }}</p>
+  {% if entry.extra.status == "obtained" %}<p class="card__meta"><span class="tag tag--gold">Obtained</span></p>{% endif %}
+</a></article>
+{% endcomponent ui.entry_card %}
+
+{% component company(id: string) %}
+{%- set companies = load_data(path="data/company_links.toml") -%}
+{%- set company = companies[id] -%}
+<a href="{{ company.url }}" rel="noopener noreferrer" target="_blank">{{ company.name }}</a>
+{%- endcomponent company %}
+
+{% component credential(id: string) %}
+{%- set credentials = load_data(path="data/credential_links.toml") -%}
+{%- set credential = credentials[id] -%}
+<a href="{{ credential.url }}" rel="noopener noreferrer" target="_blank">{{ credential.short_name }}</a> ({{ credential.name }})
+{%- endcomponent credential %}

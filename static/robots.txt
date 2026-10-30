@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://thematako.github.io/sitemap.xml

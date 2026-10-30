@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}{{ section.title }} · {{ config.title }}{% endblock title %}
+{% block description %}{{ section.description or config.description }}{% endblock description %}
+{% block content %}
+<header class="page-head">
+  <h1>{{ section.title }}</h1>
+  {% if section.description %}<p class="lead">{{ section.description }}</p>{% endif %}
+</header>
+{% if section.pages %}
+<div class="grid">{% for p in section.pages %}{{<ui.entry_card entry={p} />}}{% endfor %}</div>
+{% else %}
+<p class="muted">Nothing here yet.</p>
+{% endif %}
+{% endblock content %}

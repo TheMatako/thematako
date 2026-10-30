@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}{{ config.title }}{% endblock title %}
+{% block content %}
+<section class="hero">
+  <h1>{{ section.title }}</h1>
+  <p class="lead">{{ section.extra.lead }}</p>
+  <p class="lead no-margin-top">{{ section.extra.lead2 }}</p>
+  <div class="hero__actions">
+    <a class="btn btn--primary" href="{{ get_url(path='/projects/ipls/', trailing_slash=true) }}">More about IPLS</a>
+  </div>
+</section>
+
+{% set projects = get_section(path="projects/_index.md") %}
+{% if projects.pages %}
+<section aria-labelledby="projects">
+  <div class="section-head"><h2 id="projects">My Projects</h2></div>
+  <div class="grid">{% for p in projects.pages %}{{<ui.entry_card entry={p} />}}{% endfor %}</div>
+</section>
+{% endif %}
+
+{% set certs = get_section(path="certifications/_index.md") %}
+{% if certs.pages %}
+<section aria-labelledby="certifications">
+  <div class="section-head"><h2 id="certifications">About the Certifications</h2></div>
+  <div class="grid">{% for p in certs.pages %}{{<ui.entry_card entry={p} />}}{% endfor %}</div>
+</section>
+{% endif %}
+{% endblock content %}

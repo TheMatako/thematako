@@ -1,4 +1,3 @@
-/* Raw values. Never used directly in components: components read the roles defined in themes/. */
 :root {
   /* Neutrals */
   --ink-950: #0d0e12;

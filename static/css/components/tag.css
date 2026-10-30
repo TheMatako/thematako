@@ -1,4 +1,0 @@
-.tag { display: inline-block; padding: 2px var(--space-3); font: 500 var(--text-xs) var(--font-mono); color: var(--color-muted); border: 1px solid var(--color-border); border-radius: var(--radius-pill); white-space: nowrap; }
-.tag--accent { color: var(--color-accent-hover); border-color: var(--color-accent-border); }
-.tag--success { color: var(--color-success); border-color: var(--color-success-border); }
-.tag--gold { color: var(--color-gold); border-color: var(--color-gold-border); }
